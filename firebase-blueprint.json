@@ -1,0 +1,73 @@
+{
+  "entities": {
+    "User": {
+      "path": "users/{userId}",
+      "fields": {
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string" },
+        "phone": { "type": "string" },
+        "language": { "type": "string" },
+        "createdAt": { "type": "timestamp" }
+      }
+    },
+    "SymptomRecord": {
+      "path": "users/{userId}/symptoms/{symptomId}",
+      "fields": {
+        "userId": { "type": "string" },
+        "symptoms": { "type": "string" },
+        "severity": { "type": "string" },
+        "duration": { "type": "string" },
+        "allergies": { "type": "string" },
+        "currentMedications": { "type": "string" },
+        "signal": { "type": "string" },
+        "urgencyText": { "type": "string" },
+        "createdAt": { "type": "timestamp" }
+      }
+    },
+    "ConsultationRecord": {
+      "path": "users/{userId}/consultations/{consultationId}",
+      "fields": {
+        "userId": { "type": "string" },
+        "patientName": { "type": "string" },
+        "doctorId": { "type": "string" },
+        "doctorName": { "type": "string" },
+        "reason": { "type": "string" },
+        "status": { "type": "string" },
+        "roomId": { "type": "string" },
+        "createdAt": { "type": "timestamp" }
+      }
+    },
+    "PrescriptionRecord": {
+      "path": "users/{userId}/prescriptions/{prescriptionId}",
+      "fields": {
+        "userId": { "type": "string" },
+        "patientName": { "type": "string" },
+        "doctorId": { "type": "string" },
+        "doctorName": { "type": "string" },
+        "hospitalName": { "type": "string" },
+        "diagnosis": { "type": "string" },
+        "symptoms": { "type": "string" },
+        "guidelines": { "type": "string" },
+        "followUp": { "type": "string" },
+        "doctorSignature": { "type": "string" },
+        "isFinalApproved": { "type": "boolean" },
+        "createdAt": { "type": "timestamp" }
+      }
+    },
+    "ReferralRecord": {
+      "path": "users/{userId}/referrals/{referralId}",
+      "fields": {
+        "userId": { "type": "string" },
+        "patientName": { "type": "string" },
+        "specialist": { "type": "string" },
+        "reason": { "type": "string" },
+        "facility": { "type": "string" },
+        "followUpDate": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "timestamp" }
+      }
+    }
+  }
+}

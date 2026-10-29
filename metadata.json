@@ -1,0 +1,6 @@
+{
+  "name": "SwasthyaSetu",
+  "description": "Interactive healthcare triage, teleconsultation, AI symptom analysis, emergency guidance, and digital prescriptions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,8 @@
+{
+  "firestore": [
+    {
+      "database": "ai-studio-android-swasthya-e8a5c57c-9ecf-4867-a92f-5ec706a6a467",
+      "rules": "firestore.rules"
+    }
+  ]
+}
